@@ -71,6 +71,8 @@ PATH=$PATH:$BUILD_DIR/vendor/node/bin
 # Clean any npm cache hanging about
 npm update -g
 npm cache clean
+
+cd $BUILD_DIR
 npm install
 
 # NPM stuff end
