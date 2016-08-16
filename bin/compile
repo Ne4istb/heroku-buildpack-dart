@@ -72,6 +72,8 @@ PATH=$PATH:$BUILD_DIR/vendor/node/bin
 npm update -g
 npm cache clean
 
+cd $BUILD_DIR
+
 for filename in `find . -name package.json`; do
     pub_dir=`dirname $filename`
     message "*** Found package.json in $BUILD_DIR/$pub_dir"
